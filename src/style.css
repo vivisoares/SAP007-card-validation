@@ -1,0 +1,75 @@
+*{
+    font-family: Abel Regular;
+  }
+
+body{
+    background-color: #f2e1d3 ;
+    color: black;
+    text-align: center;
+    padding: 1em;
+
+}
+section {
+    align-content: center;
+}
+
+.cardContainer {
+    align-self: center;
+    background-color: white;
+    height: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 10px;
+    text-align: left;
+    padding: 25px;
+}
+
+
+.fontCampos {
+    color: rgb(0, 0, 0);
+    font-style: oblique;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5%;
+    display: inline;
+  }
+
+.cardCampos {
+  font-style: oblique;
+  font-size: 16px;
+  margin-top: 5px;
+  
+}
+
+#CardVerificationValue {
+  width: 50px;
+ 
+
+}
+
+
+/*Botão "CLIQUE PARA PROSSEGUIR" hover (mouse), cursor */
+.ValidButton {
+    font-size: 1.2em;
+    font-style: oblique;
+    background: #705640;
+    border: 0;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: absolute;
+    left: 50%;
+    border-radius: 10px;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+
+}
+.ValidButton:hover {
+    background: #BD916C;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+.ValidButton, select{
+    cursor: pointer;
+}

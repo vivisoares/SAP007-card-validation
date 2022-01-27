@@ -2,34 +2,38 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Tarjeta de crédito válida</title>
+    <title>☯︎ SSKYN ACERVO ☯︎</title>
     <link rel="stylesheet" href="style.css" />
     <script src="index.js" type="module"></script>
   </head>
-
+  <!--COMENTÁRIO HTML-->
 
 
   <body>
+<header>
+  <h1> SSkyn Acervo </h1>
+</header>
+    <main>
+    <section class="cardContainer"> 
+      <br> <br>
+<!---->
+      <label for='creditCardNumber'  class='fontCampos'> NÚMERO DO COMPLETO CARTÃO </label> <br>
+      <input name='number' id='creditCardNumber' class='cardCampos'  maxlength='16' placeholder='0000 0000 0000 0000'> <br><br>
 
-    <section class="cartao">
-      <br><br><br>
-      <label for='creditCardNumber'  class='cartlabels'> NÚMERO DO COMPLETO CARTÃO </label> <br>
-      <input name="number" id="creditCardNumber"class="cartlabels" placeholder="xxxx xxxx xxxx xxxx"> <br><br>
-
-      <label for='creditCardName' class='cartlabels'> NOME TITULAR </label> <br>
-      <input type="text" id="creditCardName" class='cartlabels' placeholder="xxxxxxx xxxxxxxxx"><br><br>
+      <label for='creditCardName' class='fontCampos'> NOME DO TITULAR </label> <br>
+      <input type='text' id="creditCardName" class='cardCampos' placeholder="xxxxxxxx x x x xxxxxx" ><br><br>
       
-      <label for='ExpirationDate' class='cartlabels'> DATA DE VALIDADE </label> <br>
-      <input type="month" id="ExpirationDate" class='cartlabels' min="2016-01" max="2030-01" placeholder="xx/xxxx"><br><br>
+      <label for='ExpirationDate' class='fontCampos'> DATA DE VALIDADE </label> <br>
+      <input type='month' id="ExpirationDate" class='cardCampos' min='2016-01' max='2030-01' placeholder='xx/xxxx'>
       
-      <label for='CardVerificationValue' class='cartlabels'> CVV </label> <br>
-      <input type="number" id="CardVerificationValue" class='cartlabels' placeholder='XXX'> <br><br>
+      <label for='CardVerificationValue' class='fontCampos'> CVV </label> <br>
+      <input name='number' id='CardVerificationValue' class='cardCampos' maxlength='3' placeholder='XXX'> 
 
-      <input type="submit" class="ValidButton" id="Validar!" onsubmit="">
+      <button type='submit' class='ValidButton' id='ValidButton'> enviar </button>
     
 
 </section>
-
+</main>
 
   </body>
 </html>
