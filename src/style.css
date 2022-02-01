@@ -3,7 +3,7 @@
   }
 
 body{
-    background-color: #f1e1d4 ;
+    background-image: url('snakkk.png')  ;
     color: black;
     text-align: center;
     padding: 1em;
@@ -26,8 +26,10 @@ form {
     border-radius: 15px;
     text-align: left;
     padding: 25px;   
+    border: solid #705030;
+    border-top-width: 19px;
+    border-top-left-radius: 5px ;
 }
-
 
 .fontCampos {
     color: rgb(0, 0, 0);
@@ -42,7 +44,7 @@ form {
   font-style: oblique;
   font-size: 16px;
   margin-top: 5px;
-  width: 160px;
+  width: 180px;
 }
 
 #CardVerificationValue {
@@ -52,7 +54,7 @@ form {
 
 
 /*Botão "CLIQUE PARA PROSSEGUIR" hover (mouse), cursor */
-.ValidButton {
+#ValidButton {
     font-size: 1.2em;
     font-style: oblique;
     background: #705640;
@@ -68,12 +70,12 @@ form {
     transform: translate(-50%, -50%)
 }
 
-.ValidButton:hover {
+#ValidButton:hover {
     background: #BD916C;
     box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: none;
 }
 
-.ValidButton, select{
+#ValidButton, select{
     cursor: pointer;
 }

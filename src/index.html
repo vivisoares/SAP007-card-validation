@@ -11,24 +11,23 @@
 
   <body>
 <header>
-  <h1> SSkyn Acervo </h1>
+  <h1> ☯︎ SSkyn Acervo ☯︎ </h1>
 </header>
     <main>
     <section class="cardContainer"> 
       <br> <br>
 <!---->
-    <li> <label for='creditCardNumber'  class='fontCampos'> NÚMERO DO CARTÃO </label> <br>
-          <input name='number' id='creditCardNumber' class='cardCampos'  maxlength='16' placeholder='0000 0000 0000 0000'> <br><br> </li>
+    <li> <label  class='fontCampos'> NÚMERO DO CARTÃO </label> <br>
+          <input type='text' name='Numero' id='creditCardNumber' class='cardCampos'  maxlength='16' placeholder='0000 0000 0000 0000' :required> <br><br> </li>
     <li> <label for='creditCardName' class='fontCampos'> NOME DO TITULAR </label> <br>
-          <input type='text' id="creditCardName" class='cardCampos' placeholder="xxxxxxxx x x x xxxxxx" ><br><br> </li>
+          <input type='text' id="creditCardName" class='cardCampos' placeholder="xxxxxxxx x x x xxxxxx" :required> <br><br> </li>
     <li> <label for='ExpirationDate' class='fontCampos'> DATA DE VALIDADE </label> <br>
-          <input type='month' id="ExpirationDate" class='cardCampos' min='2016-01' max='2030-01' placeholder='xx/xxxx'><br><br>  </li>
+          <input type='month' id="ExpirationDate" class='cardCampos' min='2016-01' max='2030-01' placeholder='xx/xxxx' :required><br><br>  </li>
     <li> <label for='CardVerificationValue' class='fontCampos'> CVV </label> <br>
-          <input name='number' id='CardVerificationValue' class='cardCampos' maxlength='3' placeholder='XXX'> </li>
+          <input type='text' id='CardVerificationValue' class='cardCampos' maxlength='3' placeholder='XXX' :required> </li>
          
-    <button type='submit' class='ValidButton' id='ValidButton'> enviar </button>
-    
-    </form>
+    <input type='button' id='ValidButton' value='Enviar' onsubmit='Catching()'> 
+    <p id='valorInput'> </p>
 </section>
 </main>
 
