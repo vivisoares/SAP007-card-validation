@@ -1,48 +1,28 @@
-import validator from './validator.js';
-console.log(validator);
+
+
 
 let CCardNumber = document.getElementById('creditCardNumber'); //* Guarda número do cartão 
 let VBttn = document.getElementById('ValidButton'); //** Var. para o botão receber funcionalidade
 
-VBttn.addEventListener("click", Catching); //* Quando o botão for clicado, a função vai ser executada
+function Catching() {
 
-function Catching() { 
-    //* Função montada
- //   if (creditCardNumber, creditCardName, ExpirationDate, CardVerificationValue == '' || creditCardNumber, creditCardName, ExpirationDate, CardVerificationValue == null) {
- //       alert('Por favor, preencha todos os campos!');
- //   }
- //   else
+    let CCNumber = CCardNumber.value; //* Armazenar o valor específico inputado e adicionar em outra váriavel !!!esse valor em específico!!!
 
+    let outCome = document.getElementById('OuttCome');
+    let validateCC = validator.isValid(CCNumber);
+//   console.log(validateCC);
 
-    let  inputCCNumber = CCardNumber.value; //* Armazenar o valor específico inputado e adicionar em outra váriavel !!!esse valor em específico!!!
-    console.log(inputCCNumber); //* Imprimir o valor digitado
-    console.log(typeof inputCCNumber); //* String
+    if(validateCC) {
+        outCome.textContent = 'CARTÃO VÁLIDO!' //+ mask
+    }else 
+        outCome.textContent = 'CARTÃO INVÁLIDO!' //+ mask
+    }   
+    
+//* function para mostrar resultado escondido depois
+// getelementbyId style.display
+// let displayResultado
+    VBttn.addEventListener("click", Catching) 
 
-    let arrayCCNumber = inputCCNumber.split(''); //* Valor em array
-    console.log(arrayCCNumber, 'valor em array');
-    console.log(typeof arrayCCNumber);
+import validator from './validator.js';
+console.log(validator);
 
-    let reverseCCNumber = arrayCCNumber.reverse(); //* Valor ao contrário
-    console.log(reverseCCNumber, 'contrário');
-    console.log(typeof reverseCCNumber);
-
-    let pnumCCNumber = parseInt(reverseCCNumber); //* Valor em número, só está pegando o último
-    console.log(pnumCCNumber, 'número');
-    console.log(typeof pnumCCNumber);
-
-
-//for (let i = 0; i < pnumCCNumber.length; i++) {
-
-//     let soma = 0;
-
-//      if (i % 2 === 1) {
-//          valueNumber *= 2;
-//         if (valueNumber > 9) {
-//             valueNumber -= 9;
-//        }
-//        pnumCCnumber[index] = valueNumber;
- //       console.log(valueNumber, "que?");
-//        soma += valueNumber;
-//  console.log(arrayCCNumber);
-//isValid(inputCCNumber); {
-}
