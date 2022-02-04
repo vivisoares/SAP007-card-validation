@@ -22,7 +22,7 @@ const validator = {
             else
             soma = soma + Number(CCNumber[i]);
     }
-  
+
     if (soma % 10 == 0) {
       return true
     }
@@ -30,5 +30,5 @@ const validator = {
       return false
     }
    }
-  }
+  } 
   export default validator
