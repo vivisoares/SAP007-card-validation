@@ -2,33 +2,42 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>☯︎ SSKYN ACERVO ☯︎</title>
+    <title> SSKYN ACERVO </title>
     <link rel="stylesheet" href="style.css" />
     <script src="index.js" type="module"></script>
   </head>
   <!--COMENTÁRIO HTML-->
-
-
   <body>
 <header>
-  <h1> ☯︎ SSkyn Acervo ☯︎ </h1>
+  <img src='sshd.png' class='PaperHeader' width=100%> <br><br><br><br><br>
 </header>
+  <!--CABEÇALHO-->
+
     <main>
-    <section class="cardContainer"> 
-      <br> <br>
+      <div id='section' class='infosContainer'> 
+        <!---->
+           <h2> ☯︎ Seja bem-vindo ao validador de compras! ☯︎</h2> <br>
+           <h3> É uma grande honra te receber aqui na Sinergia Skyn! </h3> 
+           <br>
+           <h3> Para prosseguirmos com o andamento do pedido nº XXXXX, é de extrema importância que <strong> todos os campos sejam preenchidos corretamente </strong> com as informações de pagamento. </h3> <br>
+           <h3> No primeiro e no último campo, digite apenas os números solicitados, sem nenhum caractér especial ou pontuação. </h3> <br>
+           <h3> Agradecemos imensamente a atenção e preferência. Volte sempre que quiser se reinventar em Sua Pele! </h3>
+          </div>
+
+      <div id='section' class="cardContainer"> 
 <!---->
     <li> <label  class='fontCampos'> NÚMERO DO CARTÃO </label> <br>
-          <input type='text' name='Numero' id='creditCardNumber' class='cardCampos'  maxlength='16' placeholder='0000 0000 0000 0000' :required> <br><br> </li>
+          <input type='text' name='Numero' id='creditCardNumber' class='cardCampos' min='13' maxlength='16' placeholder='XXXX XXXX XXXX XXXX'> <br><br> </li>
     <li> <label for='creditCardName' class='fontCampos'> NOME DO TITULAR </label> <br>
           <input type='text' id="creditCardName" class='cardCampos' placeholder="xxxxxxxx x x x xxxxxx" :required> <br><br> </li>
     <li> <label for='ExpirationDate' class='fontCampos'> DATA DE VALIDADE </label> <br>
-          <input type='month' id="ExpirationDate" class='cardCampos' min='2016-01' max='2030-01' placeholder='xx/xxxx' :required><br><br>  </li>
+          <input type='month' id="ExpirationDate" class='cardCampos' min='2016-01' max='2030-01' placeholder='xx/xxxx'><br><br>  </li>
     <li> <label for='CardVerificationValue' class='fontCampos'> CVV </label> <br>
-          <input type='text' id='CardVerificationValue' class='cardCampos' maxlength='3' placeholder='XXX' :required> </li>
+          <input type='text' id='CardVerificationValue' class='cardCampos' maxlength='3' placeholder='XXX'> </li>
          
     <input type='button' id='ValidButton' value='Enviar' onsubmit='Catching()'> 
     <p id='OuttCome'> </p>
-</section>
+    </div>
 </main>
   </body>
 </html>

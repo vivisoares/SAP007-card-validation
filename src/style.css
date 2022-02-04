@@ -1,36 +1,78 @@
 *{
     font-family: Abel Regular;
+    margin: 0;
+    padding: 0;
+    border: 0;
   }
-
 body{
-    background-image: url('snakkk.png')  ;
+    background-image: url('ssbg.png');
+    width: 100%;
+    height: 100%;
+    position: absolute;
     color: black;
     text-align: center;
     padding: 1em;
 
 }
-section {
-    align-content: center;
-}
-
 form {
     display: inline;
 }
 
-.cardContainer {
-    align-self: center;
-    background-color: white;
-    height: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
-    border-radius: 15px;
-    text-align: left;
-    padding: 25px;   
-    border: solid #705030;
-    border-top-width: 19px;
-    border-top-left-radius: 5px ;
+/* Cabeçalho*/
+header {
+  margin-top: -2%;
+  background-size: 100%;
+  overflow: hidden;
 }
 
+/* Imagem do cabeçalho*/
+.PaperHeader {
+  position: absolute;
+  margin-left: -50%;
+  margin-right: 0%;
+  width: auto;
+  max-height: 30%;
+  overflow: hidden;
+}
+
+div{
+  margin-top: 8%;
+}
+
+/* Container informações! */
+.infosContainer {
+  background-color: white;
+  width: 35%;
+  height: 50%;
+  margin-left: 10%;
+  margin-right: 55%;
+  border-radius: 15px;
+  text-align: left;
+  padding: 25px;   
+  border: solid #282c3e;
+  border-top-width: 25px;
+  border-bottom-width: 25px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+/* Container dos dados do Cartão */
+.cardContainer {
+    background-color: #e9e5e0;
+    width: 35%;
+    height: 50%;
+    margin-top: -27%;
+    margin-left: 56%;
+    margin-right: 5%;
+    border-radius: 15px;
+    text-align: center;
+    padding: 25px;   
+    border: solid #282c3e;
+    border-top-width: 25px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    list-style: none;
+}
+
+/* Labels dos dados do Cartão */
 .fontCampos {
     color: rgb(0, 0, 0);
     font-style: oblique;
@@ -38,26 +80,25 @@ form {
     font-weight: bold;
     margin-bottom: 5%;
     display: inline;
-  }
+    text-align: center;
+}
 
+/* Compos para os dados do Cartão */
 .cardCampos {
   font-style: oblique;
   font-size: 16px;
   margin-top: 5px;
   width: 180px;
+  display: inline;
+  text-align: center;
+  
 }
 
-#CardVerificationValue {
-  width: 50px;
-  display: inline-block;
-}
-
-
-/*Botão "CLIQUE PARA PROSSEGUIR" hover (mouse), cursor */
+/*Botão "Enviar"*/
 #ValidButton {
     font-size: 1.2em;
     font-style: oblique;
-    background: #705640;
+    background: #3c3f4e;
     border: 0;
     color: #ffffff;
     padding: 0.2em 0.6em;
@@ -66,16 +107,22 @@ form {
     position: absolute;
     left: 50%;
     border-radius: 10px;
-    margin-right: -50%;
+    margin-left: 30%;
+    margin-top: -1%;
     transform: translate(-50%, -50%)
 }
-
+/*Hover (mouse passando por cima do botão*/
 #ValidButton:hover {
-    background: #BD916C;
+    background: #8b8c92;
     box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: none;
 }
-
+/*Mudar cursor ao passar em cima do botão*/
 #ValidButton, select{
     cursor: pointer;
+}
+
+#OuttCome { 
+  display: block;
+
 }

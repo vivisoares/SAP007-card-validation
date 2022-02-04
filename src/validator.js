@@ -10,11 +10,10 @@ const validator = {
 
          if (i % 2 != 0) {
             CCNumber[i] = (Number(CCNumber[i])) * 2;
-//                                                                                    p/visualização.console.log(CCNumber)
             
             if (CCNumber[i] > 9) {
               CCNumber[i] = CCNumber[i] - 9;
-//                                                                                    p/visualização.console.log(CCNumber)                
+
                 soma = soma + Number(CCNumber[i]);
               }
               else
@@ -23,8 +22,6 @@ const validator = {
             else
             soma = soma + Number(CCNumber[i]);
     }
-
-//                                                                                    p/visualização.console.log(soma)
   
     if (soma % 10 == 0) {
       return true
