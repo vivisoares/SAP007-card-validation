@@ -37,7 +37,7 @@ const validator = {
     const lastFourNumbers = 4
     
     for (let i = 0; i < maskCCN.length - lastFourNumbers; i++) {
-    maskCCN[i] = "*"
+    maskCCN[i] = "#"
     }
     let joinCCN = maskCCN.join('');
     return joinCCN
