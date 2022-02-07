@@ -6,13 +6,13 @@
   }
 body{
     background-image: url('ssbg.png');
-    width: 100%;
+    width: 96%;
     height: 100%;
     position: absolute;
     color: black;
     text-align: center;
     padding: 1em;
-
+    overflow: hidden;
 }
 form {
     display: inline;
@@ -20,23 +20,18 @@ form {
 
 /* Cabeçalho*/
 header {
-  margin-top: -2%;
-  background-size: 100%;
-  overflow: hidden;
+  margin: -2%;
+  background-size: 80%;
 }
 
 /* Imagem do cabeçalho*/
 .PaperHeader {
-  position: absolute;
-  margin-left: -50%;
-  margin-right: 0%;
-  width: auto;
-  max-height: 30%;
+  width: 100%;
   overflow: hidden;
 }
 
-div{
-  margin-top: 8%;
+div {
+  margin-top: 0%;
 }
 
 /* Container informações! */
@@ -44,7 +39,8 @@ div{
   background-color: white;
   width: 35%;
   height: 50%;
-  margin-left: 10%;
+  margin-top: 3%;
+  margin-left: 8%;
   margin-right: 55%;
   border-radius: 15px;
   text-align: left;
@@ -57,24 +53,26 @@ div{
 
 /* Container dos dados do Cartão */
 .cardContainer {
+    margin-top: 2%;
     background-color: #e9e5e0;
     width: 35%;
     height: 50%;
-    margin-top: -27%;
-    margin-left: 56%;
-    margin-right: 5%;
+    margin-top: -31%;
+    margin-left: 55%;
+    margin-right: 8%;
     border-radius: 15px;
     text-align: center;
     padding: 25px;   
     border: solid #282c3e;
     border-top-width: 25px;
+    border-bottom-width: 25px;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     list-style: none;
 }
 
 /* Labels dos dados do Cartão */
 .fontCampos {
-    color: rgb(0, 0, 0);
+    color: #282c3e;
     font-style: oblique;
     font-size: 16px;
     font-weight: bold;
@@ -91,7 +89,10 @@ div{
   width: 180px;
   display: inline;
   text-align: center;
-  
+  background-color: white;
+  border-radius: 5px;
+  border: #282c3e;
+  border: 1px;
 }
 
 /*Botão "Enviar"*/
@@ -122,7 +123,10 @@ div{
     cursor: pointer;
 }
 
-#OuttCome { 
-  display: block;
-
+#OuttCome {
+  border-radius: 50px;
+  margin-top: 5%;
+  height: auto;
+  background-color: #282c3e;
+  color: whitesmoke;
 }

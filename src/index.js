@@ -1,26 +1,26 @@
-let VBttn = document.getElementById('ValidButton'); //** Var. para o botão receber funcionalidade
+import validator from './validator.js';
 
+let VBttn = document.getElementById('ValidButton');
 
 function Catching() {
 
-    let CCardNumber = document.getElementById('creditCardNumber'); //* Guarda número do cartão 
-    let CCNumber = CCardNumber.value; //* Armazenar o valor específico inputado e adicionar em outra váriavel !!!esse valor em específico!!!
-    let validateCC = validator.isValid(CCNumber);
+    let inputCCardNumber = document.getElementById('creditCardNumber'); 
+    let CCNumber = inputCCardNumber.value;
 
-    if (validateCC) {
-        outCome.textContent = 'CARTÃO VÁLIDO!' //+ mask
+    if (CCNumber == null || CCNumber == "" || CCNumber == "e") {
+        alert('Por favor, preencha os campos corretamente!')
     } else {
-        outCome.textContent = 'CARTÃO INVÁLIDO!' //+ mask
+        let maskValue = validator.maskify(CCNumber);
+        let validateCC = validator.isValid(CCNumber);
+        if (validateCC) {
+            outCome.textContent = 'CARTÃO FINAL ' + maskValue + ' É VÁLIDO!' 
+        } else {
+            outCome.textContent = 'CARTÃO FINAL ' + maskValue + ' É INVÁLIDO! ' + ' TENTE NOVAMENTE.' 
+        }
+        document.getElementById('creditCardNumber').value = ''
     }
 }
 
 VBttn.addEventListener("click", Catching)
 let outCome = document.getElementById('OuttCome');
-
-//* function para mostrar resultado escondido depois
-// getelementbyId style.display
-// let displayResultado
-
-import validator from './validator.js';
-console.log(validator);
 
