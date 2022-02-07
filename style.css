@@ -1,0 +1,132 @@
+*{
+    font-family: Abel Regular;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+body{
+    background-image: url('ssbg.png');
+    width: 96%;
+    height: 100%;
+    position: absolute;
+    color: black;
+    text-align: center;
+    padding: 1em;
+    overflow: hidden;
+}
+form {
+    display: inline;
+}
+
+/* Cabeçalho*/
+header {
+  margin: -2%;
+  background-size: 80%;
+}
+
+/* Imagem do cabeçalho*/
+.PaperHeader {
+  width: 100%;
+  overflow: hidden;
+}
+
+div {
+  margin-top: 0%;
+}
+
+/* Container informações! */
+.infosContainer {
+  background-color: white;
+  width: 35%;
+  height: 50%;
+  margin-top: 3%;
+  margin-left: 8%;
+  margin-right: 55%;
+  border-radius: 15px;
+  text-align: left;
+  padding: 25px;   
+  border: solid #282c3e;
+  border-top-width: 25px;
+  border-bottom-width: 25px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+/* Container dos dados do Cartão */
+.cardContainer {
+    margin-top: 2%;
+    background-color: #e9e5e0;
+    width: 35%;
+    height: 50%;
+    margin-top: -31%;
+    margin-left: 55%;
+    margin-right: 8%;
+    border-radius: 15px;
+    text-align: center;
+    padding: 25px;   
+    border: solid #282c3e;
+    border-top-width: 25px;
+    border-bottom-width: 25px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    list-style: none;
+}
+
+/* Labels dos dados do Cartão */
+.fontCampos {
+    color: #282c3e;
+    font-style: oblique;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5%;
+    display: inline;
+    text-align: center;
+}
+
+/* Compos para os dados do Cartão */
+.cardCampos {
+  font-style: oblique;
+  font-size: 16px;
+  margin-top: 5px;
+  width: 180px;
+  display: inline;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  border: #282c3e;
+  border: 1px;
+}
+
+/*Botão "Enviar"*/
+#ValidButton {
+    font-size: 1.2em;
+    font-style: oblique;
+    background: #3c3f4e;
+    border: 0;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: absolute;
+    left: 50%;
+    border-radius: 10px;
+    margin-left: 30%;
+    margin-top: -1%;
+    transform: translate(-50%, -50%)
+}
+/*Hover (mouse passando por cima do botão*/
+#ValidButton:hover {
+    background: #8b8c92;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+/*Mudar cursor ao passar em cima do botão*/
+#ValidButton, select{
+    cursor: pointer;
+}
+
+#OuttCome {
+  border-radius: 50px;
+  margin-top: 5%;
+  height: auto;
+  background-color: #282c3e;
+  color: whitesmoke;
+}

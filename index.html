@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title> SSKYN ACERVO </title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="index.js" type="module"></script>
+</head>
+<!--COMENTÁRIO HTML-->
+
+<body>
+  <header>
+    <img src="sshd.png" class="PaperHeader" width="100%"> 
+  </header>
+  <!--CABEÇALHO-->
+  <main>
+
+    <!---->
+    <div class="infosContainer">
+
+      <h2> ☯︎ Seja bem-vindo à validação de compras! ☯︎</h2> <br>
+      <h3> É uma grande honra te receber aqui na Sinergia Skyn! </h3>
+      <br>
+      <h3> Para prosseguirmos com o andamento do pedido nº XXXXX, é de extrema importância que <strong> todos os campos
+          sejam preenchidos corretamente </strong> com as informações de pagamento. </h3> <br>
+      <h3> No primeiro e no último campo, digite apenas os números solicitados, sem nenhum caractér especial ou
+        pontuação. </h3> <br>
+      <h3> Agradecemos imensamente a atenção e preferência. Volte sempre que quiser se reinventar em Sua Pele! </h3>
+    </div>
+
+    <!---->
+    <div class="cardContainer">
+      <li> <label class="fontCampos"> NÚMERO DO CARTÃO </label> <br>
+        <input type="number" name="Numero" id="creditCardNumber" class="cardCampos" placeholder="**** **** **** ****">
+        <br><br>
+      </li>
+      <li> <label for="creditCardName" class="fontCampos"> NOME DO TITULAR </label> <br>
+        <input type="text" id="creditCardName" class="cardCampos" placeholder="xxxxxxx x x xxxxxxx">
+        <br><br>
+      </li>
+      <li> <label for="ExpirationDate" class="fontCampos"> DATA DE VALIDADE </label> <br>
+        <input type="month" id="ExpirationDate" class="cardCampos" min="2016-01" max="2030-01"
+          placeholder="xx/xxxx"><br><br>
+      </li>
+      <li> <label for="CardVerificationValue" class="fontCampos"> CVV </label> <br>
+        <input type="text" id="CardVerificationValue" class="cardCampos" maxlength="3" placeholder="***">
+      </li>
+
+      <button id="ValidButton"> Validar </button>
+      <p id="OuttCome"> <strong> </strong> </p>
+
+    </div>
+  </main>
+</body>
+
+</html>
