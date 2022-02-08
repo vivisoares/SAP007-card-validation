@@ -30,8 +30,10 @@ header {
 }
 
 footer {
-  background-color:#282c3e;
-  color:#a7a8af;
+  /* background-color:#282c3e;
+  color:#a7a8af; */
+  background-color:#a7a8af;
+  color:#282c3e;;
   letter-spacing: 1px;
   font-size: 13px;
   font-weight: bold;
