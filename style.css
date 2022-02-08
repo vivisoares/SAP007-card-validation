@@ -14,9 +14,13 @@ body{
     padding: 1em;
     overflow: hidden;
 }
-form {
-    display: inline;
-}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+        display: none;
+        -webkit-appearance: none;
+        margin: 0;
+    }
 
 /* Cabeçalho*/
 header {
