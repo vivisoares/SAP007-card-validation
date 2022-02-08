@@ -5,7 +5,7 @@
 - [1. Introdução](#1-Introdução)
 - [2. Definição e objetivo do produto](#2-Definição-e-objetivo-do-produto)
 - [3. Desenvolvimento](#3-Desenvolvimento)
-- [4. Considerações finais](#5-considerações-finais)
+- [4. Considerações finais](#4-Considerações-finais)
 
 ---
 
@@ -36,41 +36,33 @@ Com o intuito de simplificar e facilitar a vida do cliente.
 
 ### Interface do usuário (UI)
 
-A interface deve permitir ao usuário:
+A interface permite ao usuário:
 
-- Inserir o número que desejamos validar.
+- Inserir o número que deseja validar.
 - Constatar se o resultado é válido ou não.
-- Ocultar todos os dígitos do número do cartão, exceto os últimos 4
-  caracteres.
-- Não deve poder inserir um campo vazio.
+- Conseguir visualizar os últimos 4 dígitios enquanto os demais são ocultados. 
 
 ## 3. Desenvolvimento
 
-### UX (Design da experiência do usuário)
+Inicialmente, foi desenvolvido o planejamento de pequenas etapas de execução do projeto através da plataforma do [Trello](https://trello.com/b/lIPhyqg8/1-card-validation-sprint-planning).
 
-Antes de começar a codificar, você deve entender o problema que deseja resolver
-e como o aplicativo o resolve.
+Em seguida, foi rascunhado o [protótipo](prototype.png) da página para uma perspectiva melhor da aplicação dos objetivos de aprendizagem necessários. Reforçando o conceito de babysteps ao longo do desenvolvimento com objetivo de aprimoramento do produto à cada etapa.
 
-- Trabalhe seu primeiro protótipo com papel e lápis (preto e branco).
-- Em seguida, valide esta solução com uma companheira (peça feedback).
-- Use o aprendizado no momento de validar seu primeiro protótipo e desenvolva um
-  novo protótipo empregando alguma ferramenta para design de protótipos
-  ([Balsamiq](https://balsamiq.com/), [Figma](https://www.figma.com/),
-  [Apresentações Google](https://www.google.com/intl/pt-br/slides/about/) etc.)
-  Esses pontos serão apresentados no `README.md`.
+Primeiramente, foi desenvolvida a estrutura simples, em HTML e CSS, seguindo os conceitos de aplicação de semântica, uso de seletores, box model, entre outros, conforme protótipo. 
+Após a finalização da estrutura básica, foi iniciada a manipulação do arquivo index.js, responsável por receber todos os seletores de DOM, sendo eles os gerenciadores de eventos de DOM e manipulação dinâmica de DOM. Onde o projeto começou a ganhar vida e tomar forma da sua funcionalidade.
 
-### Scripts / Arquivos
+E por último e mais importante para concluir a funcionalidade e objetivo do produto, o arquivo validation.js, que hospeda as duas funções de teste unitários, é responsável por armazenar a função da formúla do Algoritmo de Luhn, que permite a validação do cartão de crédito, e a função de mascarar os números, deixando aparente apenas os últimos 4 dígitos, ambos resultados das funções são entregues na página HTML ao validar os campos.
+Ambos arquivos JS utilizam-se de uso de condicionais, laços, parâmetros, valor de retorno.
 
-- `REAME.md`: deve explicar como "deployar", instalar e executar a aplicação,
-  assim como uma introdução a aplicação, suas funcionalidades e as decisões que
-  foram tomadas.
+As atualizações virtuais do projeto ao GitHub foram feitas pelo terminal GitBash através dos comandos 'git' e para teste local foram usados os comandos 'npm'
 
 ## 4. Considerações finais
 
-
-### Parte Obrigatória
-
-- [ ] `README.md` adicionar informação sobre o processo e decisões do desenho.
-- [ ] `README.md` explicar claramente quem são os usuários e as suas relações
-      com o produto.
-- [ ] `README.md` explicar claramente como o produto soluciona os
+- O planejamento deste projeto se encontra no [Trello](https://trello.com/b/lIPhyqg8/1-card-validation-sprint-planning)
+- O repositório deste projeto se encontra no [GitHub](https://github.com/vivisoares/SAP007-card-validation)
+- O deploy deste projeto está hospedado no [GitPages](https://vivisoares.github.io/SAP007-card-validation/)
+- Este projeto nse utiliza apenas do uso de Vanilla JavaScript. Frameworks e bibliotecas não foram utilizadas.
+- Foram executados dois testes: validator.isValid e validator.maskify.
+- Os testes unitários cobriram 100% dos statements, functions e lines e branches.
+- Este projeto conta com o uso de SSH key associada a conta do GitHub.
+- Desenvolvido por Viviane Soares.
