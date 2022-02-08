@@ -4,11 +4,12 @@
     padding: 0;
     border: 0;
   }
+
 body{
     background-image: url('ssbg.png');
     width: 96%;
-    height: 100%;
-    position: absolute;
+    height: 97%;
+    position: fixed;
     color: black;
     text-align: center;
     padding: 1em;
@@ -28,6 +29,18 @@ header {
   background-size: 80%;
 }
 
+footer {
+  background-color:#282c3e;
+  color:#a7a8af;
+  letter-spacing: 1px;
+  font-size: 13px;
+  font-weight: bold;
+	position: absolute;
+	bottom: 13px;
+  width: 110%;
+	margin-left: -2%;
+}
+
 /* Imagem do cabeçalho*/
 .PaperHeader {
   width: 100%;
@@ -43,7 +56,7 @@ div {
   background-color: white;
   width: 35%;
   height: 50%;
-  margin-top: 3%;
+  margin-top: 1%;
   margin-left: 8%;
   margin-right: 55%;
   border-radius: 15px;
@@ -60,7 +73,7 @@ div {
     margin-top: 2%;
     background-color: #e9e5e0;
     width: 35%;
-    height: 50%;
+    height: 55%;
     margin-top: -31%;
     margin-left: 55%;
     margin-right: 8%;
@@ -129,7 +142,7 @@ div {
 
 #OuttCome {
   border-radius: 50px;
-  margin-top: 5%;
+  margin-top: 7%;
   height: auto;
   background-color: #282c3e;
   color: whitesmoke;
