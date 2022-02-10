@@ -11,47 +11,40 @@
 
 <body>
   <header>
-    <img src="sshd.png" class="PaperHeader" width="100%"> 
+    <img src="sshd.png" class="paperHeader" width="100%"> 
   </header>
-  <!--CABEÇALHO-->
   <main>
-
-    <!---->
+    <div> 
     <div class="infosContainer">
-
-      <h2> ☯︎ Seja bem-vindo à validação de compras! ☯︎</h2> <br>
+      <h2> ☯︎ Seja bem-vindo à validação de compras! ☯︎</h2>
       <h3> É uma grande honra te receber aqui na Sinergia Skyn! </h3>
-      <br>
       <h3> Para prosseguirmos com o andamento do pedido nº XXXXX, é de extrema importância que <strong> todos os campos
-          sejam preenchidos corretamente </strong> com as informações de pagamento. </h3> <br>
+          sejam preenchidos corretamente </strong> com as informações de pagamento. </h3> 
       <h3> No primeiro e no último campo, digite apenas os números solicitados, sem nenhum caractér especial ou
-        pontuação. </h3> <br>
+        pontuação. </h3> 
       <h3> Agradecemos imensamente a atenção e preferência. Volte sempre que quiser se reinventar em Sua Pele! </h3>
     </div>
 
-    <!---->
     <div class="cardContainer">
-      <li> <label class="fontCampos"> NÚMERO DO CARTÃO </label> <br>
-        <input type="number" name="Numero" id="creditCardNumber" class="cardCampos" placeholder="**** **** **** ****">
-        <br><br>
-      </li>
-      <li> <label for="creditCardName" class="fontCampos"> NOME DO TITULAR </label> <br>
-        <input type="text" id="creditCardName" class="cardCampos" placeholder="xxxxxxx x x xxxxxxx">
-        <br><br>
-      </li>
-      <li> <label for="ExpirationDate" class="fontCampos"> DATA DE VALIDADE </label> <br>
-        <input type="month" id="ExpirationDate" class="cardCampos" min="2016-01" max="2030-01"
-          placeholder="xx/xxxx"><br><br>
-      </li>
-      <li> <label for="CardVerificationValue" class="fontCampos"> CVV </label> <br>
-        <input type="text" id="CardVerificationValue" class="cardCampos" maxlength="3" placeholder="***">
-      </li> 
+      <li> <label class="fontFields"> NÚMERO DO CARTÃO:
+        <input type="number" name="Numero" id="creditCardNumber" class="cardFields" placeholder="**** **** **** ****"> </label> </li>
+      
+      <li> <label for="creditCardName" class="fontFields"> NOME DO TITULAR:
+        <input type="text" id="creditCardName" class="cardFields" placeholder="xxxxxxx x x xxxxxxx"> </label> </li>
+      
+      <li> <label for="expirationDate" class="fontFields"> DATA DE VALIDADE: 
+        <input type="month" id="expirationDate" class="cardFields" min="2016-01" max="2030-01" placeholder="xx/xxxx"> </label> </li>
+      
+      <li> <label for="cardVerificationValue" class="fontFields"> CVV:
+        <input type="text" id="cardVerificationValue" class="cardFields" maxlength="3" placeholder="***"> </label> </li>
+      
 
-      <button id="ValidButton"> Validar </button>
-      <p id="OuttCome"> <strong> </strong> </p>
+      <li> <button id="validButton"> Validar! </button> </li>
+      <p id="outCome" > </p>
     </div>
+  </div>
   </main>
-  <footer> ☯︎ ALL COPYRIGHTS ARE ASSIGNED BY VIVIANE SOARES ☯︎ </footer>
 </body>
 
+<footer id="developerCredits"> ALL COPYRIGHTS ARE ASSIGNED BY <br> <p href="https://github.com/vivisoares">  ☯︎ VIVIANE SOARES ☯︎ </p> </footer>
 </html>

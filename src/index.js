@@ -1,26 +1,27 @@
 import validator from './validator.js';
 
-let VBttn = document.getElementById('ValidButton');
+const validBttn = document.getElementById('validButton');
+const outCome = document.getElementById('outCome');
 
 function Catching() {
+    const inputCreditCardNumber = document.getElementById('creditCardNumber'); 
+    let creditCardNumber = inputCreditCardNumber.value;
+    if (creditCardNumber == null || creditCardNumber == "" || creditCardNumber == "e") {
+    alert('Por favor, preencha os campos corretamente!')
+} 
+    else {
+    const maskValue = validator.maskify(creditCardNumber);
+    const validateCreditCard = validator.isValid(creditCardNumber);
 
-    let inputCCardNumber = document.getElementById('creditCardNumber'); 
-    let CCNumber = inputCCardNumber.value;
-
-    if (CCNumber == null || CCNumber == "" || CCNumber == "e") {
-        alert('Por favor, preencha os campos corretamente!')
-    } else {
-        let maskValue = validator.maskify(CCNumber);
-        let validateCC = validator.isValid(CCNumber);
-        if (validateCC) {
-            outCome.textContent = 'CARTÃO FINAL ' + maskValue + ' É VÁLIDO!' 
-        } else {
-            outCome.textContent = 'CARTÃO FINAL ' + maskValue + ' É INVÁLIDO! ' + ' TENTE NOVAMENTE.' 
+    if (validateCreditCard) {
+        outCome.textContent = 'CARTÃO FINAL ' + maskValue + ' É VÁLIDO!' 
+    } 
+    else {
+            outCome.textContent = 'CARTÃO INVÁLIDO! ' + ' TENTE NOVAMENTE.' 
         }
-        document.getElementById('creditCardNumber').value = ''
     }
+    document.getElementById('creditCardNumber', 'expirationDate' , 'creditCardName' , 'cardVerificationValue').value = ''
 }
+validBttn.addEventListener("click", Catching);
 
-VBttn.addEventListener("click", Catching)
-let outCome = document.getElementById('OuttCome');
 
